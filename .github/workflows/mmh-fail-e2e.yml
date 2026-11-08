@@ -1,0 +1,11 @@
+name: mmh-fail-e2e
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  fail:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "intentional failure for MM Harness CI failure-path test"
+          exit 1
