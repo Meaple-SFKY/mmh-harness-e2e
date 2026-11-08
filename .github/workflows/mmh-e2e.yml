@@ -1,0 +1,8 @@
+name: mmh-e2e
+on: [push]
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo
+        run: echo "mmh e2e CI ok"
